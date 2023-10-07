@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 // function myComponent(){
 
@@ -15,10 +15,18 @@ import React from 'react';
 //   }
 // }
 
-// function App(){
+ function App(props){
+  console.log(props.color);
+
    
-//     return <h1>hello</h1>
-//   }
+    return (
+      <div className="App">
+        <button onClick={props.clickEvent}>click me!</button>
+
+      </div>
+      
+    );
+  }
   // return myComponent();
 
 // const myComponent= () =>{
